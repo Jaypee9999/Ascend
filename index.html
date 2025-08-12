@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ascend</title>
+  <link href="./output.css" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+<body class="font-sans bg-white text-gray-800">
+ 
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#001f3f] bg-opacity-90 text-white flex flex-col sm:flex-row justify-between items-center py-4 px-6 gap-4">
+    <h1 class="text-xl font-bold ">Ascend</h1>
+    <div class="relative w-full sm:w-auto sm:max-w-md">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search..." 
+        class="bg-white w-full pl-4 pr-10 py-2 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-[#FFD700]"
+      />
+      <button 
+        id="searchBtn" 
+        class="absolute right-0 top-0 h-full px-3 text-[#001f3f] hover:text-[#003366] transition"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="h-screen min-h-[600px] flex items-center text-left pt-28 bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(0, 31, 63, 0.7), rgba(0, 31, 63, 0.8)), url('images/ascend.png');">
+    <div class="container mx-auto px-6">
+      <div class="max-w-xl text-white">
+        <h1 class="text-[90px] italic leading-tight">Welcome To</h1>
+        <h2 class="text-[89px] italic leading-tight">ASCEND</h2>
+        <p class="text-lg mb-6">Accelerating Schools and Chemical Industry Engagement for Nurturing Development.</p>
+        <button class="bg-white text-[#001f3f] font-bold px-7 py-3 rounded-lg shadow-md hover:bg-blue-100 transition" onclick="document.getElementById('categories').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+      </div>
+    </div>
+  </section>
+  <section id="categories" class="py-20 bg-white text-gray-900 mt-0">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+        <div class="bg-white p-6 rounded-lg shadow-lg border text-center transition hover:-translate-y-2 w-full max-w-sm mx-auto">
+          <span class="text-4xl text-[#001f3f] mb-4 block">📊</span>
+          <h4 class="text-xl font-semibold mb-6">Studies from different universities</h4>
+          <a href="components/studies.html" target="_blank" class="bg-[#001f3f] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            Browse Studies
+          </a>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md border text-center transition hover:-translate-y-2 w-full max-w-sm mx-auto">
+          <span class="text-4xl text-[#001f3f] mb-4 block">🏢</span>
+          <h4 class="text-xl font-semibold mb-6">Companies</h4>
+          <a href="components/quickReview.html" target="_blank" class="bg-[#001f3f] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            View Companies
+          </a>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md border text-center transition hover:-translate-y-2 w-full max-w-sm mx-auto">
+          <span class="text-4xl text-[#001f3f] mb-4 block">📋</span>
+          <h4 class="text-xl font-semibold mb-6">Ascend Program</h4>
+          <a href="components/program.html" target="_blank" class="bg-[#001f3f] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            See program
+          </a>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md border text-center transition hover:-translate-y-2 w-full max-w-sm mx-auto">
+          <span class="text-4xl text-[#001f3f] mb-4 block">📰</span>
+          <h4 class="text-xl font-semibold mb-6">Ascend News</h4>
+          <a href="components/news.html" class="bg-[#001f3f] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            Read News
+          </a>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md border text-center transition hover:-translate-y-2 w-full max-w-sm mx-auto">
+          <span class="text-4xl text-[#001f3f] mb-4 block">👥</span>
+          <h4 class="text-xl font-semibold mb-6">Ascend Team Members</h4>
+          <a href="components/members.html" target="_blank" class="bg-[#001f3f] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            View Teams
+          </a>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md border text-center transition hover:-translate-y-2 w-full max-w-sm mx-auto">
+          <span class="text-4xl text-[#001f3f] mb-4 block">📅</span>
+          <h4 class="text-xl font-semibold mb-6">Jobs</h4>
+          <a href="#" class="bg-[#001f3f] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            View Opportunities
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-10 flex justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-md border text-center transition hover:-translate-y-2 w-full max-w-sm">
+          <span class="text-4xl text-[#001f3f] mb-4 block">📚</span>
+          <h4 class="text-xl font-semibold mb-6">PlayBook</h4>
+          <a href="pdf/Example.pdf" target="_blank" class="bg-[#001f3f] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            View
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#001f3f] text-white pt-16 pb-4">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-12">
+        <form class="flex flex-col gap-4 max-w-lg w-full" id="contactForm">
+          <h4 class="text-2xl font-semibold">Contact Us</h4>
+          <input type="text" id="contactName" placeholder="Your Name" class="bg-white p-3 rounded text-black focus:outline-none focus:ring-2 focus:ring-[#FFD700]" required />
+          <input type="email" id="contactEmail" placeholder="Your Email" class="bg-white p-3 rounded text-black focus:outline-none focus:ring-2 focus:ring-[#FFD700]" required />
+          <textarea id="contactMessage" placeholder="Your Message" class="bg-white p-3 rounded text-black h-40 focus:outline-none focus:ring-2 focus:ring-[#FFD700]" required></textarea>
+          <button type="submit" class="bg-white text-[#001f3f] font-bold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">Send Message</button>
+        </form>
+        <div>
+          <h4 class="text-2xl font-semibold mb-4">Get In Touch</h4>
+          <p class="text-lg mb-2"><strong>Email:   ************************</strong></p>
+          <p class="text-lg mb-2"><strong>Phone:   ************************</strong></p>
+          <p class="text-lg"><strong>Address:      ************************</strong></p>
+        </div>
+      </div>
+      <div class="text-center mt-12 border-t border-white/10 pt-6">
+        <p>&copy; 2025 Ascend. All rights reserved. Made by Apey</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
